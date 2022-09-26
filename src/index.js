@@ -11,6 +11,7 @@ const server = new ApolloServer({
   resolvers,
   cache: new InMemoryLRUCache(),
   plugins: [ApolloServerPluginLandingPageLocalDefault({ embed: true })],
+  introspection: true,
 });
 
 server
