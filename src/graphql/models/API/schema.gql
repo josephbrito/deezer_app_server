@@ -1,0 +1,23 @@
+type Singer {
+  name: String
+  picture_big: String
+}
+
+type Album {
+  title: String
+  cover_big: String
+}
+
+type Data {
+  id: Int
+  title: String
+  link: String
+  preview: String
+  duration: Int
+  album: Album
+  artist: Singer
+}
+
+type Query {
+  data(param: String): [Data]!
+}
