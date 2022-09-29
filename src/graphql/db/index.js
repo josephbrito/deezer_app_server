@@ -4,7 +4,7 @@ async function db(param) {
     baseURL: "https://deezerdevs-deezer.p.rapidapi.com/",
     params: { q: param },
     headers: {
-      "X-RapidAPI-Key": "666498a1b2msh62bc688bf28eafep1a1ea5jsnc3cce76a50e5",
+      "X-RapidAPI-Key": process.env.API_KEY,
       "X-RapidAPI-Host": "deezerdevs-deezer.p.rapidapi.com",
     },
   });
